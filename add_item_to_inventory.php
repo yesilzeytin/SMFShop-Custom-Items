@@ -30,7 +30,7 @@
 if (!defined('SMF'))
 	die('Hacking attempt...');
 
-class item_AaTest2 extends itemTemplate
+class item_add_item_to_inventory extends itemTemplate
 {
 	function getItemDetails()
 	{
