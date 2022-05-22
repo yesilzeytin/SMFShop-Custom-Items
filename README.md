@@ -1,6 +1,6 @@
 # SMFShop-Custom-Items
 Two new items for SMFShop of Daniel15.
-These items are originally created for a Harry Potter RPG forum "https://buyucedunya-rpg.com/" for potion brewing system and Chocolate Frog Card drops.
+These items are originally created for a Harry Potter RPG forum https://buyucedunya-rpg.com/ for potion brewing system and Chocolate Frog Card drops.
 
 Item #1: Increase Karma and Roll a Custom Profile Field Stat Dice
 	This item allows you to use string type Custom Profile Stat variables as some "stats" and roll dice using them as modifiers.
