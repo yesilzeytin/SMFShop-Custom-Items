@@ -40,7 +40,7 @@ class item_add_item_to_inventory extends itemTemplate
 		$this->authorEmail = 'Turbo Nezir#0042';
 
 		$this->name = 'add_item_to_inventory';
-		$this->desc = 'Create New Item in Inventory';
+		$this->desc = 'Increase Karma and Create New Item in Inventory';
 		$this->price = 100;
 
 		$this->require_input = false;
@@ -60,6 +60,16 @@ class item_add_item_to_inventory extends itemTemplate
 	function onUse()
 	{
 		global $smcFunc, $context, $item_info;
+		
+		// Increase Karma here
+		$smcFunc['db_query']('', '
+			UPDATE {db_prefix}members
+			SET `karma_good` = `karma_good` + {int:amount}
+			WHERE id_member = {int:id}',
+			array(
+				'id' => $context['user']['id'],
+				'amount' => $item_info[1],
+			));
 		
 	    	// Put a new item in user's inventory
 	    	// itemid is for any item you would prefer. That shall be updated for any item required.
