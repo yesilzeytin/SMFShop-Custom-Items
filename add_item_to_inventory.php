@@ -95,7 +95,7 @@ class item_add_item_to_inventory extends itemTemplate
 	    
 		// Start SMF Shop Log mod
 			global $boarddir;
-			$filename  = $boarddir . "/shopkarmaitemlog.txt";
+			$filename  = $boarddir . "/whatever_log_file_name_youd_prefer.txt";
 			$data = "[" . date("g:ia m/d/Y")."] " . $context['user']['name']. " ---> +1 GP from Item" . "\n";
 			file_put_contents($filename,$data,FILE_APPEND); 
 		// end SMF Shop Log Mod
